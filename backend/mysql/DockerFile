@@ -1,0 +1,6 @@
+#Get the latest version of MySQL Image   
+From mysql:latest
+
+#DO NOT USE "ROOT" AS YOUR SQL DATABASE PASSWORD, Just an example
+ENV MYSQL_ROOT_PASSWORD=root 
+
