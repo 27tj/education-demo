@@ -1,5 +1,5 @@
 #Get the Python 3.10 Image
-From python:3.10
+FROM python:3.10
 
 #Install Python dependency
 RUN pip install flask-marshmallow
