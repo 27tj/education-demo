@@ -8,3 +8,11 @@ APP_SECRET_KEY = os.getenv('APP_SECRET_KEY')
 def create_app():
     app = Flask(__name__)
     app.config['SECRET_KEY'] = APP_SECRET_KEY
+    
+    
+    from .HTTPEndpoint.auth import auth
+    
+    
+    app.register_blueprint(auth, url_prefix='/')
+    
+    return app
