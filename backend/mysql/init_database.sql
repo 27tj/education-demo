@@ -7,9 +7,7 @@ CREATE TABLE `customers`(
     `email` VARCHAR(200)NOT NULL,
     `password` varchar(255) default null,
     `age` TINYINT UNSIGNED,
-    `address` TEXT DEFAULT NULL,
-    `pan` VARCHAR(20),
-    `cvv` VARCHAR(3)
+    `address` TEXT DEFAULT NULL
 );
 
 CREATE TABLE `products`(
@@ -25,6 +23,6 @@ CREATE TABLE `administrators`(
     `uuid` VARBINARY(16) DEFAULT (RANDOM_BYTES(16)) NOT NULL PRIMARY KEY,
     `name` VARCHAR(200) NOT NULL,
     `email` VARCHAR(200)NOT NULL,
-    `assword` varchar(255) NOT NULL
+    `password` varchar(255) NOT NULL
 );
 

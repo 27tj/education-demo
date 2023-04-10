@@ -1,4 +1,4 @@
-from ...HTTPResolver import db
+from .. import db
 from flask_login import UserMixin
 import sqlalchemy as sa
 
