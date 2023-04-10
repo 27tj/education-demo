@@ -5,7 +5,6 @@ auth = Blueprint('auth', __name__)
 @auth.route('/login',endpoint='login', methods=["POST"])
 def login():
     data = request.form
-    data.username 
     return jsonify({"test":"login"})
 
 @auth.route('/logout',endpoint='logout')

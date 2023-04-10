@@ -15,4 +15,3 @@ WORKDIR /usr/app/src
 COPY main.py ./
 
 COPY ./HTTPResovers ./
-
